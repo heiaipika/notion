@@ -13,7 +13,7 @@ export const Logo = () => {
             <Image src="/logo.svg" className="dark:hidden" width={40} height={40} alt="logo" />
             <Image src="/logo.svg" className="hidden dark:block" width={40} height={40} alt="logo" />
             <p className={cn("font-semibold ", font.className)}>
-                Jotion
+                Heiaipika
             </p>
         </div>
     )
