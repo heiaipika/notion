@@ -3,6 +3,7 @@ import { ChevronsLeft, MenuIcon } from "lucide-react"
 import { useParams, usePathname, useRouter } from "next/navigation"
 import { ElementRef, useEffect, useRef, useState } from "react"
 import { useMediaQuery } from "usehooks-ts"
+import { UserItem } from "./user-item"
 
 export const Navigation = () => {
     const router = useRouter()
@@ -89,6 +90,9 @@ export const Navigation = () => {
                     isMobile && !isCollapsed && "opacity-100")
             }>
                 <ChevronsLeft className="h-6 w-6" />
+            </div>
+            <div>
+                <UserItem />
             </div>
             <div onClick={resetWidth} onMouseDown={handleMouseDown} className="opacity-0 group-hover/sidebar:opacity-100 transition
             cursor-ew-resize absolute h-full w-1 bg-primary/10 right-0 top-0" />
